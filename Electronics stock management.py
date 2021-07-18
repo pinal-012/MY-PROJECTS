@@ -1,4 +1,5 @@
 
+
 import os
 os.system('cls')
 from datetime import datetime
@@ -88,12 +89,13 @@ class Product_Manager:
 class Customer(Product_Manager):
     
     def __init__(self):
-        self.m_quantity=0
-        self.m_quantity=0
-        self.c_quantity=0
+        pass
+        #self.m_quantity=0
+        #self.m_quantity=0
+        #self.c_quantity=0
 
     def view_product(self):
-        Customer.view_stock(self)       #Method Over-riding
+        Product_Manager.view_stock(self)       #Method Over-riding
     
     def view_and_buy(self):
         while True:
